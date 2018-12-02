@@ -11,14 +11,22 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container" id="header">
 
             <div>
                 <h1>Sit <span class="text_color_decoraion">on</span> chair</h1>
             </div>
 
-            <ul>
-                <li class="list_item"><a href="#">O firmie</a></li>
+            <ul id="navigation">
+                <li class="list_item"><a href="#">O firmie</a>
+                    <!--<ul id="about_list">-->
+
+                        <!--<li class="list_item"><a href="#">Aktualności</a></li>-->
+                        <!--<li class="list_item"><a href="#">Nasz team</a></li>-->
+                        <!--<li class="list_item"><a href="#">Historia</a></li>-->
+
+                    <!--</ul>-->
+                </li>
                 <li class="list_item"><a href="#">Galeria</a></li>
                 <li class="list_item"><a href="#">Kontakt</a></li>
             </ul>
@@ -28,13 +36,7 @@
 
 
 
-    <!--<ul>-->
 
-    <!--<li class="list_item"><a href="#">Aktualności</a></li>-->
-    <!--<li class="list_item"><a href="#">Nasz team</a></li>-->
-    <!--<li class="list_item"><a href="#">Historia</a></li>-->
-
-    <!--</ul>-->
 
 
 
@@ -43,110 +45,196 @@
 
             <ul class="slider__list">
                 <li class="slider__item">
-                    <div class="slider__chair_image"><div></div></div>
+                    <div class="slider__chair_image"><div>
+
+                    </div></div>
                     <div class="slider__product_description">
-                        <p>Sit <span class="text_color_decoraion">on</span> our <span class="text_color_decoraion">chair</span></p><br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <p>Sit <span class="text_color_decoraion">on</span> our <span class="text_color_decoraion">chair</span></p>
+                        <p id="slider__product_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation.</p>
                         <button id="slider__button"><a href="#">Zobacz więcej</a></button>
+
                     </div>
                 </li>
             </ul>
-
-            <div id="slider_forward"><a href="#">></a></div>
+            <div id="slider_forward"><a href="#"> > </a></div>
             <div id="slider_backwards"><a href="#"> < </a></div>
-
         </div>
+
+
+
 
 
     </section>
 
     <section class="container">
 
-        <div></div>
-        <div></div>
-        <div>
-            <h>Finds all inputs</h>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident </p>
+        <div id="chair_clair">
+            <div class="decoration_label"><p>Chair CLAIR</p></div>
+        </div>
+        <div id="chair_margarita">
+            <div class="decoration_label"><p>Chair CLAIR</p></div>
+        </div>
+        <div id="product_description">
+            <div>
+                <h>Finds all inputs</h>
+            </div>
+            <div>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. <br><br>Excepturi sint occaecati cupiditate non provident deleniti atque et iusto odio.</p>
+            </div>
         </div>
 
     </section>
 
-    <section class="offer_packages">
 
+
+
+
+
+    <section class="offer_packages">
 <div class="container">
 
-    <div><p id="section_header">Cennik</p></div>
+    <div class="section_header"><p>Cennik</p></div>
 
     <div id="packages_container">
-        <div class="offer__item"></div>
-        <div class="offer__item"></div>
-        <div class="offer__item"></div>
-    </div>
 
-</div>
+        <div class="offer__item">
+            <div class="offer__header">
+                <p>Basic plan</p>
+            </div>
 
+            <div class="offer__price_circle_container">
+                <div class="offer__price_circle">
+                    <div>
+                        <p>85<span><sup>99</sup><br>PLN/MSC</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="offer__list">
+                <li class="offer__list_item"> Zakup towaru + dowóz</li>
+                <li class="offer__list_item">Serwis</li>
+            </ul>
+
+            <button><a href="#">Dołącz</a> </button>
+        </div>
+
+        <div class="offer__item" id="negative_item">
+            <div class="offer__header">
+                <p>Standard Plan</p>
+            </div>
+
+            <div class="offer__price_circle_container">
+                <div class="offer__price_circle">
+                    <div>
+                        <p  class=" text_color_decoraion">95<span><sup>99</sup><br>PLN/MSC</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="offer__list">
+                <li class="offer__list_item"> Zakup towaru + dowóz</li>
+                <li class="offer__list_item">Serwis</li>
+                <li class="offer__list_item">Gwarancja 5 lat</li>
+            </ul>
+
+            <button><a href="#">Dołącz</a> </button>
+        </div>
+
+
+            <div class="offer__item">
+                <div class="offer__header">
+                    <p>Advanced plan</p>
+                </div>
+
+                <div class="offer__price_circle_container">
+                    <div class="offer__price_circle">
+                        <div>
+                            <p>211<span><sup>00</sup><br>PLN/MSC</span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <ul class="offer__list">
+                    <li class="offer__list_item"> Zakup towaru + dowóz</li>
+                    <li class="offer__list_item">Serwis</li>
+                    <li class="offer__list_item">Gwarancja 6 lat</li>
+                    <li class="offer__list_item">Porady projektanta</li>
+                </ul>
+
+                <button><a href="#">Dołącz</a> </button>
+            </div>
+
+
+        </div>
     </section>
 
 
 
-    <!--<section class="container">-->
-
-        <!--<div>-->
-            <!--<p>Kontakt</p>-->
-        <!--</div>-->
-
-<!--<fieldset>-->
-    <!--<form class="form">-->
-        <!--<div>-->
-            <!--<input type="text" placeholder="Imię" id="name">-->
-        <!--</div>-->
-
-        <!--<div>-->
-            <!--<input type="e-mail" placeholder="email">-->
-        <!--</div>-->
-
-        <!--<div>-->
-            <!--<textarea placeholder="Wiadomość"></textarea>-->
-        <!--</div>-->
-
-        <!--<div id="red_chair"></div>-->
-
-        <!--<div>-->
-            <!--<label for="data_proceeding">-->
-                <!--<input id="data_proceeding" type="checkbox"> Zgadam się na prztwarzanie danych osobowych-->
-            <!--</label>-->
-        <!--</div>-->
-
-        <!--<div>-->
-            <!--<button type="submit">Wyślij</button>-->
-        <!--</div>-->
-
-    <!--</form>-->
 
 
 
+    <section class="container">
+
+        <div class="section_header">
+            <p>Kontakt</p>
+        </div>
+
+        <form class="form">
+
+                <div id="form__input">
+                    <div>
+                        <input type="text" placeholder="Imię" id="name">
+                    </div>
+                    <div>
+                        <input type="e-mail" placeholder="email" id="email">
+                    </div>
+                    <div>
+                        <textarea placeholder="Wiadomość"></textarea>
+                    </div>
+                </div>
+
+                <div id="form__submit">
+                    <div id="form__submit_red_chair_container">
+                        <div id="red_chair"></div>
+                    </div>
+                    <div id="form__data_proceeding_agreement_container">
+                        <div id="empty_squer"></div>
+                        <div id="empty_squer_text">
+                            <p>Zgadzam się na przetwarzanie<br> danych osoboywych</p>
+                        </div>
+                        <!--<label for="data_proceeding">-->
+                        <!--<input id="data_proceeding" type="checkbox"> Zgadam się na prztwarzanie danych osobowych-->
+                        <!--</label>-->
+                    </div>
+                    <div id="form__button_submit">
+                        <button type="submit">Wyślij</button>
+                    </div>
+
+                </div>
+        </form>
+    </section>
 
 
-<!--</fieldset>-->
 
 
-    <!--</section>-->
+    <footer class="container">
 
-    <!--<footer class="container">-->
+        <div class="footer_copyrights">Copyright 2014 | All Rights Reserved. - Sit On Chair. </div>
 
-        <!--<div>Copyright 2014 | All Rights Reserved. - Sit On Chair. </div>-->
-        <!--<div>-->
-            <!--<div class="social_links">-->
+        <div class="footer__links">
+            <div class="social_links">
+                <div class="flickr social_circle"><a href="#">flicker</a></div>
+                <div class="vimeo social_circle"><a href="#">vimeo</a></div>
+                <div  class="pintrest social_circle"><a href="#">pintrest</a></div>
+                <div class="twitter social_circle"><a href="#">twitter</a></div>
+            </div>
+            <div class="anchor"><a href="#header">Sit <span>on</span> chair</a> </div>
+        </div>
 
-                <!--<div class="social_link"></div>-->
-                <!--<div class="social_link"></div>-->
-                <!--<div class="social_link"></div>-->
-                <!--<div class="social_link"></div>-->
-
-            <!--</div>-->
-        <!--</div>-->
-
-    <!--</footer>-->
+    </footer>
 
 </body>
 </html>
