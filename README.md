@@ -1,1 +1,1 @@
-# Workshop_shop_with_chairs_page
+Landing page project
