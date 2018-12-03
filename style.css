@@ -12,6 +12,34 @@ body {
     margin: 0 auto;
 }
 
+
+/*FONTS*/
+
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('/fonts/raleway-bold/raleway-bold-webfont.woff2') format('woff2'),
+    url('/fonts/raleway-bold/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('/fonts/raleway-regular/raleway-regular-webfont.woff2') format('woff2'),
+    url('/fonts/raleway-regular/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/*HEADER*/
+
+
+
 header {
     background-color: black;
     height: 40px;
@@ -77,6 +105,8 @@ header ul li a {
     /*font-weight: bold;*/
     /*text-transform: uppercase;*/
 /*}*/
+
+/*FIRST SECTION WITH SLIDER*/
 
 section#slider {
     height: 500px;
@@ -191,6 +221,9 @@ div#slider_backwards {
     text-transform: uppercase;
 }
 
+
+/*SECOND SLIDER PRODUCTS AREA*/
+
 section:nth-of-type(2) {
     display: flex;
     justify-content: space-around;
@@ -273,7 +306,7 @@ section:nth-of-type(2) #chair_margarita {
 section:nth-of-type(2) div:last-child {
     padding-bottom: 25px;
     letter-spacing: 2px;
-    line-height: 1.6;s
+    line-height: 1.6;
     font-size: 12px;
     color: grey;
 }
@@ -285,6 +318,10 @@ section:nth-of-type(2) div:last-child {
     color: black;
     padding-bottom: 5px;
 }
+
+
+/*PRICE PACKAGES OFFER*/
+
 
 section.offer_packages {
     background-color: #f5f5ef;
@@ -335,6 +372,62 @@ div#packages_container {
     justify-content: center;
     position: relative;
 }
+
+.offer__item:before {
+    content: "";
+    display: block;
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    position: absolute;
+    left: calc(50% - 27px);
+    top: -40px;
+    z-index: 1;
+}
+
+.offer__item:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 13px);
+    top: -26px;
+    z-index: 2;
+}
+
+div#negative_item:before {
+    content: "";
+    display: block;
+    height: 55px;
+    width: 55px;
+    background-color: #00cca3;
+    border-radius: 50%;
+    border: 2px solid #00cca3;
+    position: absolute;
+    left: calc(50% - 27px);
+    top: -40px;
+    z-index: 1;
+}
+
+div#negative_item:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 12px);
+    top: -26px;
+    z-index: 2;
+
+}
+
 
 div#packages_container div.offer__item div.offer__header {
     font-size: 25px;
@@ -573,6 +666,12 @@ div#form__button_submit {
     padding-top: 3px;
     box-sizing: border-box;
 }
+
+
+
+/*FOOTER*/
+
+
 
 footer.container {
     display: flex;
